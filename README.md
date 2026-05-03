@@ -271,7 +271,7 @@ pytest tests/test_path_tracking.py -v
 
 ---
 
-## 9. Results
+## 8. Results
 
 | Metric | Value |
 |---|---|
