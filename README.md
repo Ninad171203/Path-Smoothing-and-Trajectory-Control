@@ -13,8 +13,7 @@
 5. [Extending to a Real Robot](#5-extending-to-a-real-robot)
 6. [Obstacle Avoidance (Extra Credit)](#6-obstacle-avoidance-extra-credit)
 7. [Testing](#7-testing)
-8. [AI Tools Used](#8-ai-tools-used)
-9. [Results](#9-results)
+8. [Results](#8-results)
 
 ---
 
@@ -269,15 +268,6 @@ pytest tests/test_path_tracking.py -v
 | DifferentialDriveSimulator | Straight line, pure rotation, yaw wrapping, history |
 
 ---
-
-## 8. AI Tools Used
-
-Claude (Anthropic) was used as a coding assistant for:
-- Reviewing algorithm documentation and academic references
-- Debugging NumPy 2.0 API compatibility (`trapz` → `trapezoid`)
-- Suggesting the chord-length parameterisation improvement
-
-All code was authored and verified by the student. The algorithms, architecture decisions, and mathematical derivations were independently reasoned through.
 
 ---
 
