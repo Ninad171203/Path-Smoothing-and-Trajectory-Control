@@ -1,0 +1,22 @@
+# params.yaml
+# Configuration for TrajectoryTrackerNode
+# Tuned for TurtleBot3 Burger (max linear = 0.22 m/s, max angular = 2.84 rad/s)
+
+trajectory_tracker:
+  ros__parameters:
+    # --- Trajectory generation ---
+    max_speed:        0.20    # m/s   — cruise speed (keep < 0.22 for Burger)
+    accel:            0.25    # m/s²  — acceleration / deceleration
+    dt:               0.05    # s     — control loop period (20 Hz)
+
+    # --- Pure Pursuit controller ---
+    lookahead_min:    0.25    # m     — minimum look-ahead distance
+    lookahead_max:    0.80    # m     — maximum look-ahead distance
+    lookahead_k:      0.50    # s     — adaptive gain: ld = k * v
+    goal_tolerance:   0.10    # m     — stop when within this of goal
+    max_angular_vel:  2.50    # rad/s — safety cap
+
+    # --- Obstacle avoidance (APF) ---
+    enable_avoidance: true
+    influence_radius: 0.60    # m     — APF starts repelling inside this
+    repulsive_gain:   0.40    # η     — repulsion strength
